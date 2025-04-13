@@ -1,0 +1,362 @@
+/* styles.css - Versão Otimizada */
+
+/* ============ ANIMAÇÕES ============ */
+@keyframes fadeSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animações aplicadas */
+.animate-slide-image {
+    opacity: 0;
+    animation: fadeZoomIn 0.8s ease forwards;
+    animation-delay: 0.8s;
+}
+
+.animate-nav-button {
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease forwards;
+    animation-delay: 1.4s;
+}
+
+.animate-header {
+    animation: fadeSlideDown 0.8s ease forwards;
+    opacity: 0;
+}
+
+.animate-logo {
+    animation: fadeSlideDown 1s ease forwards;
+}
+
+.animate-title {
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.animate-names {
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.animate-info {
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.9s;
+    opacity: 0;
+}
+
+.animate-slide-title,
+.animate-slide-content {
+    animation: fadeSlideUp 0.7s ease forwards;
+    opacity: 0;
+}
+
+/* ============ LAYOUT PRINCIPAL ============ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    min-height: 100vh;
+    background: none;
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* ============ HEADER ============ */
+.header {
+    background-color: #35495e;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+    color: #42b883;
+}
+
+/* ============ SLIDES ============ */
+.slide-container {
+    margin-top: 24px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide {
+    background-color: #2a2a2a;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.slide h2 {
+    margin-top: 0;
+    color: #42b883;
+}
+
+.slide:not(.cover) p {
+    text-align: justify;
+}
+
+.slide img {
+    margin-top: 12px;
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* ============ CAPA ============ */
+.cover {
+    text-align: center;
+}
+
+.cover ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.cover li {
+    margin-bottom: 4px;
+}
+
+.cover .info {
+    margin-top: 8px;
+    font-style: italic;
+    color: #bbbbbb;
+}
+
+.vue-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* ============ NAVEGAÇÃO ============ */
+.navigation {
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.navigation--center {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation--between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation button {
+    width: 60px;
+    height: 60px;
+    background: #2a2a2a;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.navigation button:hover:enabled {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+    background: #353535;
+}
+
+.navigation button:disabled {
+    background: #252525;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* ============ SETAS ============ */
+.arrow-v {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+.arrow-v svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow-v svg path {
+    stroke: #42b883;
+    stroke-width: 2;
+    fill: none;
+    transition: stroke 0.3s ease;
+}
+
+.navigation button:hover:enabled .arrow-v svg path {
+    stroke: #5dd39e;
+}
+
+/* ============ TRANSITIONS ============ */
+.nav-fade-enter-active,
+.nav-fade-leave-active {
+    transition: all 0.4s ease;
+}
+
+.nav-fade-enter-from {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.nav-fade-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/* ============ EFEITOS ESPECIAIS ============ */
+.navigation button:active:enabled {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navigation button:focus {
+    outline: 2px solid #42b883;
+    outline-offset: 2px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    transition: background 0.3s ease;
+}
+
+/* ============ BOTÃO DE TEMA ============ */
+.theme-toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+.theme-toggle-enter-active,
+.theme-toggle-leave-active {
+    transition: all 0.4s ease;
+}
+
+.theme-toggle-enter-from {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.theme-toggle-leave-to {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+/* Animação específica para o botão */
+.switch {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.switch:hover {
+    transform: scale(1.05);
+}
+
+.switch:active {
+    transform: scale(0.95);
+}
+
+/* Adicione isso ao seu styles.css */
+.switch:hover .slider {
+    box-shadow: 0 0 8px rgba(33, 150, 243, 0.6);
+}
+
+.switch:active .slider {
+    transform: scale(0.95);
+}
+
+.slider {
+    transition: all 0.2s ease;
+}
+
+.switch {
+    cursor: pointer;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+input:checked+.slider {
+    background-color: #42b883;
+    /* Usando a cor verde do Vue.js */
+}
