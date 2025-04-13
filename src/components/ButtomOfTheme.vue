@@ -1,17 +1,19 @@
 <template>
-  <div class="theme-toggle">
-    <label class="switch">
-      <input type="checkbox" @click="toggleDark()" :checked="isDark">
-      <span class="slider round"></span>
-    </label>
-  </div>
+  <transition name="theme-toggle">
+    <div class="theme-toggle-container">
+      <label class="switch">
+        <input type="checkbox" @click="toggleDark()" :checked="isDark">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </transition>
 </template>
 
 <script setup>
 import { useDark, useToggle } from '@vueuse/core'
 
 const isDark = useDark({
-  selector: 'html', // Aplicar no elemento raiz
+  selector: 'body',  // Isso aplica ao elemento body da página
   attribute: 'data-theme',
   valueDark: 'dark',
   valueLight: 'light',
