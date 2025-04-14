@@ -158,6 +158,9 @@ body[data-theme='light'] {
   .text-block {
     background-color: #cee7f7;
 }
+  .image-caption {
+    background-color: rgba(251, 250, 250, 0.7);
+  }
 }
 
 @keyframes gradientShift {
