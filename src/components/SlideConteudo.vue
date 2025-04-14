@@ -69,6 +69,9 @@ export default {
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
 }
 
 /* Bloco de Imagem em Destaque */
@@ -77,6 +80,9 @@ export default {
     flex: 1;
     min-width: 45%;
     min-height: 300px;
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
 }
 
 .image-container {
