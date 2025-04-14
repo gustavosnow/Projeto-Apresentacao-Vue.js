@@ -129,37 +129,38 @@ body[data-theme='light'] {
   background-attachment: fixed;
   background-size: 200% 200%;
   animation: gradientShift 15s ease infinite;
-  color: white;
+
   .slide {
     background-color: #cee7f7;
-    padding: 24px;
-    border-radius: 12px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
     color: #151515;
-  
-    p{
+
+    p {
       color: #151515;
     }
-    h2{
+
+    h2 {
       color: rgb(2, 99, 52);
     }
   }
-  .header{
-      background-color: #cee7f7;
-      p{
-        color: #151515;
-      }
-      h1{
-        color: rgb(2, 99, 52);
-      }
+
+  .header {
+    background-color: #cee7f7;
+
+    p {
+      color: #151515;
+    }
+
+    h1 {
+      color: rgb(2, 99, 52);
+    }
   }
+
   .text-block {
     background-color: #cee7f7;
-}
+  }
+
   .image-caption {
-    background-color: rgba(251, 250, 250, 0.7);
+    background-color: rgba(196, 196, 196, 0.7);
   }
 }
 
