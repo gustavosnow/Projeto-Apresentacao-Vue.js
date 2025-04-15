@@ -141,6 +141,9 @@ body[data-theme='light'] {
     h2 {
       color: rgb(2, 99, 52);
     }
+    .animate-info{
+      color: rgb(78, 77, 77);
+    }
   }
 
   .header {
@@ -162,6 +165,7 @@ body[data-theme='light'] {
   .image-caption {
     background-color: rgba(187, 187, 187, 0.7);
   }
+  
 }
 
 @keyframes gradientShift {
