@@ -39,10 +39,14 @@ export default {
         };
     },
     methods: {
-        navigateTo(slideIndex) {
-            this.isSumarioOpen = false;
+        toggleSumario() {
+            this.isSumarioOpen = !this.isSumarioOpen;
+        },
+        navigateTo(slideIndex, event) {
+            event.preventDefault(); // Previne o comportamento padrão do link
+            this.isSumarioOpen = false; // Fecha o sumário
             this.$emit("mudar-slide", slideIndex); // Emite um evento para o App.vue
-        }
+        },
     }
 };
 </script>
