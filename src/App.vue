@@ -2,7 +2,7 @@
   <div class="app">
     <Header v-if="currentSlideIndex === 0" />
     <ButtomOfTheme />
-
+    <ButtonSumario/>
     <main class="slide-container">
       <transition name="fade" mode="out-in">
         <SlideCapa v-if="currentSlideIndex === 0" :capa="capa" key="capa" />
@@ -21,9 +21,10 @@ import SlideCapa from './components/SlideCapa.vue'
 import SlideConteudo from './components/SlideConteudo.vue'
 import Navigation from './components/Navigation.vue'
 import ButtomOfTheme from './components/ButtomOfTheme.vue'
+import ButtonSumario from './components/ButtonSumario.vue'
 
 export default {
-  components: { Header, SlideCapa, SlideConteudo, Navigation, ButtomOfTheme },
+  components: { Header, SlideCapa, SlideConteudo, Navigation, ButtomOfTheme, ButtonSumario},
   data() {
     return {
       currentSlideIndex: 0,
