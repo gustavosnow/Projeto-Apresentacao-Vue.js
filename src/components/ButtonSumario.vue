@@ -8,19 +8,21 @@
             </div>
         </button>
 
-        <div v-if="isSumarioOpen" class="sumario-container">
-            <div class="sumario-overlay" @click="toggleSumario"></div>
-            <div class="sumario-lista">
-                <h3 class="sumario-titulo">Sumário</h3>
-                <ul>
-                    <li v-for="(topico, index) in topicos" :key="index">
-                        <a :href="topico.link" @click="navigateTo(topico.link, $event)" class="sumario-link">
-                            {{ topico.titulo }}
-                        </a>
-                    </li>
-                </ul>
+        <transition name="sumario">
+            <div v-if="isSumarioOpen" class="sumario-container">
+                <div class="sumario-overlay" @click="toggleSumario"></div>
+                <div class="sumario-lista">
+                    <h3 class="sumario-titulo">Sumário</h3>
+                    <ul>
+                        <li v-for="(topico, index) in topicos" :key="index">
+                            <a :href="topico.link" @click="navigateTo(topico.link, $event)" class="sumario-link">
+                                {{ topico.titulo }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </transition>
     </div>
 </template>
 
@@ -140,18 +142,6 @@ export default {
     background: #2a2a2a;
     padding: 80px 20px 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-    transform: translateX(0);
-    animation: slideIn 0.3s ease-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
 }
 
 .sumario-titulo {
@@ -184,5 +174,30 @@ export default {
 .sumario-link:hover {
     color: #42b883;
     background: rgba(255, 255, 255, 0.1);
+}
+
+/* Transições */
+.sumario-enter-active, .sumario-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.sumario-enter-active .sumario-lista,
+.sumario-leave-active .sumario-lista {
+    transition: transform 0.3s ease;
+}
+
+.sumario-enter-from,
+.sumario-leave-to {
+    opacity: 0;
+}
+
+.sumario-enter-from .sumario-lista,
+.sumario-leave-to .sumario-lista {
+    transform: translateX(-100%);
+}
+
+.sumario-enter-to .sumario-lista,
+.sumario-leave-from .sumario-lista {
+    transform: translateX(0);
 }
 </style>
