@@ -2,7 +2,7 @@
   <div class="app">
     <Header v-if="currentSlideIndex === 0" />
     <ButtomOfTheme />
-    <ButtonSumario/>
+    <ButtonSumario @mudar-slide="mudarSlide" />
     <main class="slide-container">
       <transition name="fade" mode="out-in">
         <SlideCapa v-if="currentSlideIndex === 0" :capa="capa" key="capa" />
@@ -24,7 +24,7 @@ import ButtomOfTheme from './components/ButtomOfTheme.vue'
 import ButtonSumario from './components/ButtonSumario.vue'
 
 export default {
-  components: { Header, SlideCapa, SlideConteudo, Navigation, ButtomOfTheme, ButtonSumario},
+  components: { Header, SlideCapa, SlideConteudo, Navigation, ButtomOfTheme, ButtonSumario },
   data() {
     return {
       currentSlideIndex: 0,
@@ -89,6 +89,12 @@ export default {
         this.reiniciarAnimacaoBotoes();
       }
     },
+
+    mudarSlide(index) {
+      this.currentSlideIndex = index;
+      this.reiniciarAnimacaoBotoes();
+    },
+
     reiniciarAnimacaoBotoes() {
       this.$nextTick(() => {
         const buttons = document.querySelectorAll(".animate-nav-button");
