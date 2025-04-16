@@ -1,5 +1,6 @@
 /* styles.css - Versão Otimizada */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
 
 /* ============ ANIMAÇÕES ============ */
 @keyframes fadeSlideDown {
@@ -104,7 +105,9 @@
 /* ============ LAYOUT PRINCIPAL ============ */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
     color: #e0e0e0;
     min-height: 100vh;
     background: none;
