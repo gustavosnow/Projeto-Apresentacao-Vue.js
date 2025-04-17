@@ -134,8 +134,19 @@ body {
     margin: 0 0 8px;
     }
 
-.progressive-text {
+.progressive-header-text {
     font-size: 4.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #7cffc4, #7f9ab8, #d8ac92); /* Cores do Vue.js */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.progressive-title-text {
+    font-size: 2.5rem;
     font-weight: bold;
     background: linear-gradient(90deg, #7cffc4, #7f9ab8, #d8ac92); /* Cores do Vue.js */
     -webkit-background-clip: text;
@@ -165,7 +176,6 @@ body {
 
 .slide h2 {
     margin-top: 0;
-    color: #42b883;
 }
 
 .slide:not(.cover) p {

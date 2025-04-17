@@ -138,10 +138,6 @@ body[data-theme='light'] {
       color: #151515;
     }
 
-    h2 {
-      color: rgb(2, 99, 52);
-    }
-
     .animate-info {
       color: rgb(78, 77, 77);
     }
@@ -155,7 +151,7 @@ body[data-theme='light'] {
     }
   }
 
-  .progressive-text {
+  .progressive-header-text {
     font-size: 4.5rem;
     font-weight: bold;
     background: linear-gradient(90deg, #3bac7b, #466b96, #cf7948); /* Cores do Vue.js */
@@ -165,6 +161,17 @@ body[data-theme='light'] {
     margin: 0;
     padding: 0;
   }
+
+  .progressive-title-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #3bac7b, #466b96, #cf7948); /* Cores do Vue.js */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+}
 
   .text-block {
     background-color: #cee7f7;

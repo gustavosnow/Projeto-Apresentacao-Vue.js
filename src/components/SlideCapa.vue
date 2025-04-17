@@ -2,7 +2,7 @@
     <section class="slide cover">
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js logo"
             class="vue-logo animate-logo" />
-        <h2 class="animate-title">{{ capa.titulo }}</h2>
+        <h2 class="animate-title progressive-title-text">{{ capa.titulo }}</h2>
 
         <p class="animate-names"><strong>Integrantes:</strong></p>
         <ul class="animate-names">

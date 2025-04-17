@@ -1,6 +1,6 @@
 <template>
     <section class="slide">
-        <h2 class="animate-slide-title">{{ slide.titulo }}</h2>
+        <h2 class="animate-slide-title progressive-title-text">{{ slide.titulo }}</h2>
 
         <div class="content-wrapper" :class="{ 'image-left': slide.imageSide === 'left' }">
             <!-- Bloco de Texto -->
