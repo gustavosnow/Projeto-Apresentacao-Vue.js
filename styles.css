@@ -95,6 +95,7 @@
     animation: fadeSlideUp 0.8s ease forwards;
     animation-delay: 0.9s;
     opacity: 0;
+    font-size: 18px;
 }
 
 .animate-slide-title{
