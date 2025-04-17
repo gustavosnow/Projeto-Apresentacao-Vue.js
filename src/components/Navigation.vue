@@ -11,6 +11,28 @@
 
 <script>
 export default {
-    props: ['currentSlideIndex', 'totalSlides', 'isEdgeSlide']
+    props: ['currentSlideIndex', 'totalSlides', 'isEdgeSlide'],
+    methods: {
+        handleKeyDown(event) {
+            switch(event.key) {
+                case 'ArrowLeft':
+                    if (this.currentSlideIndex > 0) {
+                        this.$emit('voltar');
+                    }
+                    break;
+                case 'ArrowRight':
+                    if (this.currentSlideIndex < this.totalSlides - 1) {
+                        this.$emit('avancar');
+                    }
+                    break;
+            }
+        }
+    },
+    mounted() {
+        document.addEventListener('keydown', this.handleKeyDown);
+    },
+    beforeUnmount() {
+        document.removeEventListener('keydown', this.handleKeyDown);
+    }
 };
 </script>
