@@ -158,7 +158,7 @@ body[data-theme='light'] {
   .progressive-text {
     font-size: 4.5rem;
     font-weight: bold;
-    background: linear-gradient(90deg, #0e8f57, #254c79, #cf7948); /* Cores do Vue.js */
+    background: linear-gradient(90deg, #3bac7b, #254c79, #cf7948); /* Cores do Vue.js */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
