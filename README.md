@@ -2,7 +2,7 @@
 
 ## Descrição
 
-O **ProjetoPW** é uma aplicação web desenvolvida com Vue.js, focada em [descreva o objetivo principal do projeto, por exemplo: gerenciamento de tarefas, controle financeiro, etc.]. Este projeto foi criado como parte de estudos/prática em desenvolvimento web moderno utilizando tecnologias front-end.
+O **ProjetoPW** é uma aplicação web desenvolvida com Vue.js, focada em ****. Este projeto foi criado como parte de estudos/prática em desenvolvimento web moderno utilizando tecnologias front-end.
 
 ## Tecnologias Utilizadas
 
@@ -34,10 +34,10 @@ O **ProjetoPW** é uma aplicação web desenvolvida com Vue.js, focada em [descr
 
 ## Execução
 
-Para rodar o projeto em modo de desenvolvimento:
+Para rodar o projeto:
 
 ```bash
-npm run serve
+npm run dev
 ```
 ou
 ```bash
@@ -81,10 +81,6 @@ Para contribuir com este projeto:
 3. Faça suas alterações e commit: `git commit -m 'nova feature'`
 4. Envie para o seu fork: `git push origin minha-feature`
 5. Abra um Pull Request
-
-## Licença
-
-[Defina a licença do projeto, por exemplo: MIT, GPL, etc.]
 
 ---
 
