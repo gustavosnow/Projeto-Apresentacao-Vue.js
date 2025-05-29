@@ -50,7 +50,6 @@ A aplicação estará disponível em [http://localhost:5173](http://localhost:51
 
 ```
 projetoPW/
-├── public/
 ├── src/
 │   ├── assets/
 │   ├── components/
@@ -58,7 +57,8 @@ projetoPW/
 │   └── main.js
 ├── package.json
 ├── styles.css
-└── README.md
+├── README.md
+├── ...
 ```
 
 - **components/**: Componentes reutilizáveis da interface.
