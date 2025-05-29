@@ -44,7 +44,7 @@ ou
 yarn serve
 ```
 
-A aplicação estará disponível em [http://localhost:8080](http://localhost:8080).
+A aplicação estará disponível em [http://localhost:5173](http://localhost:5173).
 
 ## Estrutura do Projeto
 
