@@ -2,7 +2,7 @@
 
 ## Descrição
 
-O **ProjetoPW** é uma aplicação web desenvolvida com Vue.js, focada em ****. Este projeto foi criado como parte de estudos/prática em desenvolvimento web moderno utilizando tecnologias front-end.
+O **ProjetoPW** é uma aplicação web desenvolvida com Vue.js, que contém como conteúdo uma apresentação sobre o próprio Vue. Este projeto foi criado como parte de estudos/prática na disciplina de Programação Web do curso de Engenharia de Software 2024, da UEPA Campus XXIII - Parauapebas, utilizando tecnologias front-end.
 
 ## Tecnologias Utilizadas
 
@@ -54,23 +54,15 @@ projetoPW/
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   ├── views/
 │   ├── App.vue
 │   └── main.js
 ├── package.json
+├── styles.css
 └── README.md
 ```
 
 - **components/**: Componentes reutilizáveis da interface.
-- **views/**: Páginas principais da aplicação.
 - **assets/**: Arquivos estáticos como imagens e estilos.
-
-## Funcionalidades
-
-- [Liste aqui as principais funcionalidades, por exemplo:]
-- Cadastro e login de usuários
-- Listagem e cadastro de itens
-- Responsividade para dispositivos móveis
 
 ## Contribuição
 
