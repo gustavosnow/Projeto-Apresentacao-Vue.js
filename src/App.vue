@@ -42,6 +42,7 @@ export default {
           imagem: "https://miro.medium.com/v2/resize:fit:500/0*xkJgg-6HskYrQ3N7.jpeg",
           imageSide: "right",
           imageCaption: "Evan You, criador do Vue.js",
+          alt: "Evan You, criador do Vue.js"
         },
         {
           titulo: "O que é Sustentabilidade?",
