@@ -1,330 +1,340 @@
-/* styles.css - Versão Otimizada */
+/* Unificado: style.css + styles.css */
+
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
 
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* ============ ANIMAÇÕES ============ */
 @keyframes fadeSlideDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeSlideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeZoomIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
 }
-
 @keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Animações aplicadas */
 .animate-slide-image {
-    opacity: 0;
-    animation: fadeZoomIn 0.8s ease forwards;
-    animation-delay: 0.8s;
+  opacity: 0;
+  animation: fadeZoomIn 0.8s ease forwards;
+  animation-delay: 0.8s;
 }
-
 .animate-nav-button {
-    opacity: 0;
-    animation: fadeSlideUp 0.6s ease forwards;
-    animation-delay: 1.4s;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-delay: 1.4s;
 }
-
 .animate-header {
-    animation: fadeSlideDown 0.8s ease forwards;
-    opacity: 0;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
+  animation: fadeSlideDown 0.8s ease forwards;
+  opacity: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
-
 .animate-logo {
-    animation: fadeSlideDown 1s ease forwards;
+  animation: fadeSlideDown 1s ease forwards;
 }
-
 .animate-title {
-    animation: fadeSlideUp 0.8s ease forwards;
-    animation-delay: 0.3s;
-    opacity: 0;
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
-
 .animate-names {
-    animation: fadeSlideUp 0.8s ease forwards;
-    animation-delay: 0.6s;
-    opacity: 0;
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
 }
-
 .animate-info {
-    animation: fadeSlideUp 0.8s ease forwards;
-    animation-delay: 0.9s;
-    opacity: 0;
-    font-size: 18px;
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+  font-size: 18px;
 }
-
 .animate-slide-title{
-    animation: fadeSlideUp 0.7s ease forwards;
-    opacity: 0;
+  animation: fadeSlideUp 0.7s ease forwards;
+  opacity: 0;
 }
 
 /* ============ LAYOUT PRINCIPAL ============ */
 body {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #e0e0e0;
-    min-height: 100vh;
-    background: none;
-    background-size: 200% 200%;
-    animation: gradientShift 15s ease infinite;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #e0e0e0;
+  min-height: 100vh;
+  background: none;
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
 }
 
 .app {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
 }
 
 /* ============ HEADER ============ */
 .header {
-    background-color: #35495e;
-    color: #ffffff;
-    text-align: center;
-    padding: 24px;
-    border-radius: 8px;
+  background-color: #35495e;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px;
+  border-radius: 8px;
 }
-
 .header h1 {
-    margin: 0 0 8px;
-    }
-
-.progressive-header-text {
-    font-size: 4.5rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, #7cffc4, #7f9ab8, #d8ac92); /* Cores do Vue.js */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin: 0;
-    padding: 0;
+  margin: 0 0 8px;
 }
-
+.progressive-header-text {
+  font-size: 4.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #7cffc4, #7f9ab8, #d8ac92);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  padding: 0;
+}
 .progressive-title-text {
-    font-size: 2.5rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, #7cffc4, #7f9ab8, #d8ac92); /* Cores do Vue.js */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin: 0;
-    padding: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #7cffc4, #7f9ab8, #d8ac92);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 /* ============ SLIDES ============ */
 .slide-container {
-    margin-top: 24px;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  margin-top: 24px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .slide {
-    background-color: #2a2a2a;
-    padding: 24px;
-    border-radius: 12px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
+  background-color: #2a2a2a;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
 }
-
 .slide h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
-
 .slide:not(.cover) p {
-    text-align: justify;
+  text-align: justify;
 }
-
 .slide img {
-    margin-top: 12px;
-    max-width: 100%;
-    max-height: 300px;
-    border-radius: 6px;
-    object-fit: cover;
+  margin-top: 12px;
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 /* ============ CAPA ============ */
 .cover {
-    text-align: center;
+  text-align: center;
 }
-
 .cover ul {
-    list-style: none;
-    padding: 0;
-    margin: 12px 0;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
 }
-
 .cover li {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
-
 .cover .info {
-    margin-top: 8px;
-    font-style: italic;
-    color: #bbbbbb;
+  margin-top: 8px;
+  font-style: italic;
+  color: #bbbbbb;
 }
-
 .vue-logo {
-    width: 120px;
-    margin-bottom: 20px;
+  width: 120px;
+  margin-bottom: 20px;
 }
 
 /* ============ NAVEGAÇÃO ============ */
 .navigation {
-    margin-top: 16px;
-    gap: 16px;
+  margin-top: 16px;
+  gap: 16px;
 }
-
 .navigation--center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 .navigation--between {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 .navigation button {
-    width: 60px;
-    height: 60px;
-    background: #2a2a2a;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 60px;
+  height: 60px;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 .navigation button:hover:enabled {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
-    background: #353535;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+  background: #353535;
 }
-
 .navigation button:disabled {
-    background: #252525;
-    color: #666;
-    cursor: not-allowed;
-    box-shadow: none;
+  background: #252525;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 /* ============ SETAS ============ */
 .arrow-v {
-    position: absolute;
-    width: 24px;
-    height: 24px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
 }
-
 .arrow-v svg {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-
 .arrow-v svg path {
-    stroke: #42b883;
-    stroke-width: 2;
-    fill: none;
-    transition: stroke 0.3s ease;
+  stroke: #42b883;
+  stroke-width: 2;
+  fill: none;
+  transition: stroke 0.3s ease;
 }
-
 .navigation button:hover:enabled .arrow-v svg path {
-    stroke: #5dd39e;
+  stroke: #5dd39e;
 }
 
 /* ============ TRANSITIONS ============ */
 .nav-fade-enter-active,
 .nav-fade-leave-active {
-    transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-
 .nav-fade-enter-from {
-    opacity: 0;
-    transform: translateY(10px);
+  opacity: 0;
+  transform: translateY(10px);
 }
-
 .nav-fade-leave-to {
-    opacity: 0;
-    transform: translateY(-10px);
+  opacity: 0;
+  transform: translateY(-10px);
 }
-
 .fade-enter-active,
 .fade-leave-active {
-    transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
-
 .fade-enter-from,
 .fade-leave-to {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* ============ EFEITOS ESPECIAIS ============ */
 .navigation button:active:enabled {
-    transform: translateY(1px);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
-
 .navigation button:focus {
-    outline: 2px solid #42b883;
-    outline-offset: 2px;
+  outline: 2px solid #42b883;
+  outline-offset: 2px;
 }
 
+/* ============ ELEMENTOS BÁSICOS ============ */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.card {
+  padding: 2em;
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ============ RESPONSIVIDADE E AJUSTES ============ */
 html,
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    transition: background 0.3s ease;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
