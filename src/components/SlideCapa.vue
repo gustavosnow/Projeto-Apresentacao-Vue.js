@@ -8,7 +8,7 @@
         <ul class="animate-names">
             <li v-for="(nome, index) in capa.integrantes" :key="index">{{ nome }}</li>
         </ul>
-        <p class="animate-names">--------------------------------------------------------</p>
+        <p class="animate-names">________________________________________________</p>
         <p class="info animate-info">{{ capa.turma }}</p>
         <p class="info animate-info">{{ capa.escola }}</p>
         <p class="info animate-info">&copy; {{ capa.ano }}</p>
