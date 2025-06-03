@@ -50,7 +50,7 @@ export default {
           imagem: "src/assets/Imagem2.jpg",
           imageSide: "left",
           imageCaption: "Evan You, criador do Vue.js",
-          alt: "Evan You, criador do Vue.js"
+          alt: "Foto de Evan You, criador do Vue.js"
         },
         {
           titulo: "Crescimento e Adoção (2015–2016)",
@@ -100,7 +100,7 @@ export default {
           imagem: "src/assets/Imagem3.jpg",
           imageSide: "right",
           imageCaption: "Empresas que usam Vue.js",
-          alt: "Logos de empresas que usam Vue.js: Xiaomi, Nintendo, BMW, Adobe"
+          alt: "Imagem com logos de empresas que usam Vue.js: Xiaomi, Nintendo, BMW, Adobe"
         }
       ]
     };
