@@ -38,10 +38,11 @@ export default {
                 { titulo: "Crescimento e Adoção (2015–2016)", link: 3 },
                 { titulo: "Vue 2.0 – Consolidação (2016)", link: 4 },
                 { titulo: "Popularidade Mundial (2017–2019)", link: 5 },
-                { titulo: "Vantagens do Vue.js", link: 6 },
-                { titulo: "Desvantagens do Vue.js", link: 7 },
-                { titulo: "Áreas onde o Vue.js é bem utilizado", link: 8 },
-                { titulo: "Empresas que usam Vue.js", link: 9 }
+                { titulo: "Vue 3.0 – Evolução Moderna (2020)", link: 6 },
+                { titulo: "Vantagens do Vue.js", link: 7 },
+                { titulo: "Desvantagens do Vue.js", link: 8 },
+                { titulo: "Áreas onde o Vue.js é bem utilizado", link: 9 },
+                { titulo: "Empresas que usam Vue.js", link: 10 }
             ]
         };
     },

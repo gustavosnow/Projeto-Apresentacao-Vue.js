@@ -46,7 +46,7 @@ export default {
         },
         {
           titulo: "Origem e Criação (2013–2014)",
-          conteudo: "•	Criador: Evan You, ex-desenvolvedor do Google, teve a ideia do Vue.js enquanto trabalhava com ferramentas como AngularJS no Google.\n\n• Motivação: Ele queria criar algo mais leve e flexível do que o AngularJS, mantendo a reatividade e a simplicidade na criação de interfaces.\n\n• Lançamento inicial: Em fevereiro de 2014, Evan lançou o Vue.js como um projeto pessoal de código aberto no GitHub.",
+          conteudo: "• Criador: Evan You, ex-desenvolvedor do Google, teve a ideia do Vue.js enquanto trabalhava com ferramentas como AngularJS no Google.\n\n• Motivação: Ele queria criar algo mais leve e flexível do que o AngularJS, mantendo a reatividade e a simplicidade na criação de interfaces.\n\n• Lançamento inicial: Em fevereiro de 2014, Evan lançou o Vue.js como um projeto pessoal de código aberto no GitHub.",
           imagem: "src/assets/Imagem2.jpg",
           imageSide: "left",
           imageCaption: "Evan You, criador do Vue.js",
@@ -54,33 +54,24 @@ export default {
         },
         {
           titulo: "Crescimento e Adoção (2015–2016)",
-          conteudo: `<ul>      
-      <li>O <b>Vue</b> começou a ganhar notoriedade na comunidade de desenvolvedores por ser:</li>
-      <ul>
-        <li>Simples de aprender.</li>
-        <li>Leve e fácil de integrar em projetos existentes.</li>
-        <li>Reativo e com sintaxe amigável.</li>
-      </ul>
-    </li>
-    <li><b>Vue 1.0</b> foi lançado em <b>outubro de 2015</b>.</li>
-    <li>A comunidade começou a crescer, contribuindo com plugins, ferramentas e documentação.</li>
-  </ul>`,
+          conteudo: `• O <b>Vue</b> começou a ganhar notoriedade na comunidade de desenvolvedores por ser:\n
+        <ol> ◦ Simples de aprender.\n </ol><ol> ◦ Leve e fácil de integrar em projetos existentes.\n </ol><ol> ◦ Reativo e com sintaxe amigável.\n\n </ol>• <b>Vue 1.0</b> foi lançado em <b>outubro de 2015</b>.\n\n• A comunidade começou a crescer, contribuindo com plugins, ferramentas e documentação.`,
         },
         {
           titulo: "Vue 2.0 – Consolidação (2016)",
-          conteudo: "•	Lançado em setembro de 2016.\n\n•	Melhorias significativas em desempenho e arquitetura.\n\n•	Introdução do Virtual DOM, Render Functions, e Server-Side Rendering (SSR).\n\n•	Tornou-se uma alternativa real ao React e Angular.",
+          conteudo: "• Lançado em setembro de 2016.\n\n•	Melhorias significativas em desempenho e arquitetura.\n\n•	Introdução do Virtual DOM, Render Functions, e Server-Side Rendering (SSR).\n\n•	Tornou-se uma alternativa real ao React e Angular.",
         },
          {
           titulo: "Popularidade Mundial (2017–2019)",
-          conteudo: "•	Vue começou a ser adotado por grandes empresas como Alibaba, Xiaomi, Baidu e Laravel (como framework frontend padrão).\n\n•	A comunidade cresceu globalmente, com conferências, cursos e eventos em vários países.\n\n•	Recebeu apoio através do Patreon e de patrocinadores, permitindo que Evan e outros colaboradores se dedicassem em tempo integral.",
+          conteudo: "• Vue começou a ser adotado por grandes empresas como Alibaba, Xiaomi, Baidu e Laravel (como framework frontend padrão).\n\n•	A comunidade cresceu globalmente, com conferências, cursos e eventos em vários países.\n\n•	Recebeu apoio através do Patreon e de patrocinadores, permitindo que Evan e outros colaboradores se dedicassem em tempo integral.",
         },
          {
           titulo: "Vue 3.0 – Evolução Moderna (2020)",
-          conteudo: "•	Lançado oficialmente em setembro de 2020.\n\n•	Reescrito com TypeScript, oferecendo melhor tipagem e manutenção.\n\n•	Introdução da Composition API, que oferece mais flexibilidade e organização para aplicações maiores.\n\n•	Melhorias de desempenho e tamanho de bundle.\n\n•	Ferramentas novas como o Vite, um bundler moderno também criado por Evan You, ganharam popularidade ao lado do Vue.",
+          conteudo: "• Lançado oficialmente em setembro de 2020.\n\n•	Reescrito com TypeScript, oferecendo melhor tipagem e manutenção.\n\n•	Introdução da Composition API, que oferece mais flexibilidade e organização para aplicações maiores.\n\n•	Melhorias de desempenho e tamanho de bundle.\n\n•	Ferramentas novas como o Vite, um bundler moderno também criado por Evan You, ganharam popularidade ao lado do Vue.",
         },
         {
           titulo: "Vue.js Atualmente (2021–2025)",
-          conteudo: "•	Vue 3 se tornou a versão padrão em 2022.\n\n•	Amplamente utilizado em aplicações SPA, SSR, PWA e até mesmo mobile (com frameworks como Quasar e NativeScript-Vue).\n\n•	A comunidade continua forte e ativa.•	Ferramentas como Pinia (substituto do Vuex), Vue Router, e o Nuxt 3 impulsionam o ecossistema.\n\n•	Evan You continua liderando o desenvolvimento do framework.",
+          conteudo: "• Vue 3 se tornou a versão padrão em 2022.\n\n• Amplamente utilizado em aplicações SPA, SSR, PWA e até mesmo mobile (com frameworks como Quasar e NativeScript-Vue).\n\n•	A comunidade continua forte e ativa.•	Ferramentas como Pinia (substituto do Vuex), Vue Router, e o Nuxt 3 impulsionam o ecossistema.\n\n•	Evan You continua liderando o desenvolvimento do framework.",
         },
         {
           titulo: "Vantagens do Vue.js",

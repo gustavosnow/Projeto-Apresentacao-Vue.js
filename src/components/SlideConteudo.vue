@@ -159,6 +159,11 @@ export default {
     margin-bottom: 1em;
 }
 
+.recuo {
+  margin-bottom: 1em;
+  margin-left: 40px;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .content-wrapper {
