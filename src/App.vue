@@ -59,7 +59,7 @@ export default {
         },
         {
           titulo: "Vue 2.0 – Consolidação (2016)",
-          conteudo: "• Lançado em setembro de 2016.\n\n•	Melhorias significativas em desempenho e arquitetura.\n\n•	Introdução do Virtual DOM, Render Functions, e Server-Side Rendering (SSR).\n\n•	Tornou-se uma alternativa real ao React e Angular.",
+          conteudo: "• Lançado em <b>setembro de 2016</b>.\n\n•	Melhorias significativas em desempenho e arquitetura.\n\n•	Introdução do <b>Virtual DOM</b>, <b>Render Functions</b> e <b>Server-Side Rendering (SSR)</b>.\n\n•	Tornou-se uma alternativa real ao React e Angular.",
         },
          {
           titulo: "Popularidade Mundial (2017–2019)",
@@ -67,11 +67,11 @@ export default {
         },
          {
           titulo: "Vue 3.0 – Evolução Moderna (2020)",
-          conteudo: "• Lançado oficialmente em setembro de 2020.\n\n•	Reescrito com TypeScript, oferecendo melhor tipagem e manutenção.\n\n•	Introdução da Composition API, que oferece mais flexibilidade e organização para aplicações maiores.\n\n•	Melhorias de desempenho e tamanho de bundle.\n\n•	Ferramentas novas como o Vite, um bundler moderno também criado por Evan You, ganharam popularidade ao lado do Vue.",
+          conteudo: "• <b>Lançado oficialmente em setembro de 2020</b>.\n\n•	Reescrito com <b>TypeScript</b>, oferecendo melhor tipagem e manutenção.\n\n•	Introdução da <b>Composition API</b>, que oferece mais flexibilidade e organização para aplicações maiores.\n\n•	Melhorias de desempenho e tamanho de bundle.\n\n•	Ferramentas novas como o <b>Vite</b>, um bundler moderno também criado por Evan You, ganharam popularidade ao lado do Vue.",
         },
         {
           titulo: "Vue.js Atualmente (2021–2025)",
-          conteudo: "• Vue 3 se tornou a versão padrão em 2022.\n\n• Amplamente utilizado em aplicações SPA, SSR, PWA e até mesmo mobile (com frameworks como Quasar e NativeScript-Vue).\n\n•	A comunidade continua forte e ativa.•	Ferramentas como Pinia (substituto do Vuex), Vue Router, e o Nuxt 3 impulsionam o ecossistema.\n\n•	Evan You continua liderando o desenvolvimento do framework.",
+          conteudo: "• Vue 3 se tornou a versão padrão em <b>2022</b>.\n\n• Amplamente utilizado em aplicações SPA, SSR, PWA e até mesmo mobile (com frameworks como Quasar e NativeScript-Vue).\n\n•	A comunidade continua forte e ativa.\n\n•	Ferramentas como <b>Pinia (substituto do Vuex)</b>, <b>Vue Router</b> e o <b>Nuxt 3</b> impulsionam o ecossistema.\n\n•	Evan You continua liderando o desenvolvimento do framework.",
         },
         {
           titulo: "Vantagens do Vue.js",
@@ -83,7 +83,7 @@ export default {
         },
         {
           titulo: "Áreas onde o Vue.js é bem utilizado",
-          conteudo: "1. Sistemas de Gestão (ERP, CRM, Painéis Admin).\n\n2. Single Page Applications (SPAs)\n\n3. Prototipagem Rápida de Interfaces",
+          conteudo: "<b>1. Sistemas de Gestão (ERP, CRM, Painéis Admin).\n\n2. Single Page Applications (SPAs)\n\n3. Prototipagem Rápida de Interfaces</b>",
         },
         {
           titulo: "Empresas que usam Vue.js",

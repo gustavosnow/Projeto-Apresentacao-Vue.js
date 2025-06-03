@@ -163,6 +163,11 @@ body {
   object-fit: contain;
 }
 
+.recuo {
+  margin-bottom: 0.1px;
+  margin-left: 40px;
+}
+
 /* ============ CAPA ============ */
 .cover {
   text-align: center;
@@ -310,10 +315,11 @@ button:focus-visible {
 .card {
   padding: 2em;
 }
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -336,21 +342,5 @@ body {
   }
   button {
     background-color: #f9f9f9;
-  }
-}
-
-@media (max-width: 600px) {
-  .slide-container {
-    padding: 16px;
-  }
-  .slide {
-    padding: 16px;
-  }
-  .navigation button {
-    width: 50px;
-    height: 50px;
-  }
-  .vue-logo {
-    width: 100px;
   }
 }
