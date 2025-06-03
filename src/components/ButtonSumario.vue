@@ -141,11 +141,11 @@ export default {
 }
 
 .sumario-lista {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 360px;
-    height: 100%;
+    min-height: 100%;
     background: #2a2a2a;
     padding: 80px 20px 40px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
