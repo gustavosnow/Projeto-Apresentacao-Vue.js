@@ -343,3 +343,19 @@ body {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 600px) {
+  .slide-container {
+    padding: 16px;
+  }
+  .slide {
+    padding: 16px;
+  }
+  .navigation button {
+    width: 50px;
+    height: 50px;
+  }
+  .vue-logo {
+    width: 100px;
+  }
+}

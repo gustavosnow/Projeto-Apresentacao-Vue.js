@@ -163,6 +163,7 @@ export default {
 @media (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .image-block {
