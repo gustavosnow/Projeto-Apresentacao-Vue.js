@@ -91,6 +91,10 @@ export default {
           imageSide: "right",
           imageCaption: "Empresas que usam Vue.js",
           alt: "Imagem com logos de empresas que usam Vue.js: Xiaomi, Nintendo, BMW, Adobe"
+        },
+        {
+          titulo: "Empresas que usam Vue.js",
+          conteudo: "1. Xiaomi\n\n2. Nintendo\n\n3. BMW\n\n4. Adobe",
         }
       ]
     };
