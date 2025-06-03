@@ -178,7 +178,7 @@ body[data-theme='light'] {
   }
 
   .image-caption {
-    background-color: rgba(187, 187, 187, 0.7);
+    background-color: rgba(235, 235, 235, 0.7);
   }
 
 }

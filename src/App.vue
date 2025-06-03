@@ -54,8 +54,7 @@ export default {
         },
         {
           titulo: "Crescimento e Adoção (2015–2016)",
-          conteudo: `• O <b>Vue</b> começou a ganhar notoriedade na comunidade de desenvolvedores por ser:\n
-        <ol> ◦ Simples de aprender.\n </ol><ol> ◦ Leve e fácil de integrar em projetos existentes.\n </ol><ol> ◦ Reativo e com sintaxe amigável.\n\n </ol>• <b>Vue 1.0</b> foi lançado em <b>outubro de 2015</b>.\n\n• A comunidade começou a crescer, contribuindo com plugins, ferramentas e documentação.`,
+          conteudo: "• O <b>Vue</b> começou a ganhar notoriedade na comunidade de desenvolvedores por ser:\n<ol> ◦ Simples de aprender.\n </ol><ol> ◦ Leve e fácil de integrar em projetos existentes.\n </ol><ol> ◦ Reativo e com sintaxe amigável.\n\n </ol>• <b>Vue 1.0</b> foi lançado em <b>outubro de 2015</b>.\n\n• A comunidade começou a crescer, contribuindo com plugins, ferramentas e documentação.",
         },
         {
           titulo: "Vue 2.0 – Consolidação (2016)",
