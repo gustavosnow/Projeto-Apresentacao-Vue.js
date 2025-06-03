@@ -57,6 +57,7 @@ export default {
     display: flex;
     gap: 24px;
     margin-top: 20px;
+    align-items: center;
 }
 
 /* Direções */
