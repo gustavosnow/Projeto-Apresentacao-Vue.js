@@ -33,10 +33,15 @@ export default {
             isSumarioOpen: false,
             topicos: [
                 { titulo: "Capa", link: 0 },
-                { titulo: "Surgimento do Vue.js", link: 1 },
-                { titulo: "Sustentabilidade", link: 2 },
-                { titulo: "Como Podemos Ajudar?", link: 3 },
-                { titulo: "Conclusão", link: 4 }
+                { titulo: "História do Vue.js", link: 1 },
+                { titulo: "Origem e Criação (2013–2014)", link: 2 },
+                { titulo: "Crescimento e Adoção (2015–2016)", link: 3 },
+                { titulo: "Vue 2.0 – Consolidação (2016)", link: 4 },
+                { titulo: "Popularidade Mundial (2017–2019)", link: 5 },
+                { titulo: "Vantagens do Vue.js", link: 6 },
+                { titulo: "Desvantagens do Vue.js", link: 7 },
+                { titulo: "Áreas onde o Vue.js é bem utilizado", link: 8 },
+                { titulo: "Empresas que usam Vue.js", link: 9 }
             ]
         };
     },
