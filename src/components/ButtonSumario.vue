@@ -39,10 +39,11 @@ export default {
                 { titulo: "Vue 2.0 – Consolidação (2016)", link: 4 },
                 { titulo: "Popularidade Mundial (2017–2019)", link: 5 },
                 { titulo: "Vue 3.0 – Evolução Moderna (2020)", link: 6 },
-                { titulo: "Vantagens do Vue.js", link: 7 },
-                { titulo: "Desvantagens do Vue.js", link: 8 },
-                { titulo: "Áreas onde o Vue.js é bem utilizado", link: 9 },
-                { titulo: "Empresas que usam Vue.js", link: 10 }
+                { titulo: "Vue.js Atualmente (2021–2025)", link: 7 },
+                { titulo: "Vantagens do Vue.js", link: 8 },
+                { titulo: "Desvantagens do Vue.js", link: 9 },
+                { titulo: "Áreas onde o Vue.js é bem utilizado", link: 10 },
+                { titulo: "Empresas que usam Vue.js", link: 11 }
             ]
         };
     },
@@ -146,8 +147,26 @@ export default {
     width: 360px;
     height: 100%;
     background: #2a2a2a;
-    padding: 80px 20px 20px;
+    padding: 80px 20px 40px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    max-height: 100vh;         /* Garante que não ultrapasse a tela */
+    overflow-y: auto;          /* Adiciona o scroll vertical */
+    box-sizing: border-box; /* garante que o padding não corte o conteúdo */
+}
+
+.sumario-lista::-webkit-scrollbar {
+    width: 8px;
+    background: #232323;
+    border-radius: 4px;
+}
+
+.sumario-lista::-webkit-scrollbar-thumb {
+    background: #42b883;
+    border-radius: 4px;
+}
+
+.sumario-lista::-webkit-scrollbar-thumb:hover {
+    background: #368f6e;
 }
 
 .sumario-titulo {
