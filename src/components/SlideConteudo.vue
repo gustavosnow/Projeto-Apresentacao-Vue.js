@@ -32,16 +32,22 @@ export default {
         }
     },
     computed: {
-        formattedContent() {
-            if (!this.slide.conteudo) return ''
-            return this.slide.conteudo
-                .replace(/\n\n/g, '</p><p class="paragraph">')
-                .replace(/\n/g, '<br>')
-        },
-        borderRadius() {
-            return this.slide.borderRadius || '12px'
-        }
+    formattedContent() {
+        if (!this.slide.conteudo) return ''
+        // Adiciona classe 'recuo' em <ul> e <ol> que não são o primeiro nível
+        let content = this.slide.conteudo
+            .replace(/\n\n/g, '</p><p class="paragraph">')
+            .replace(/\n/g, '<br>')
+            .replace(/<ul(?![^>]*class)/g, '<ul class="recuo"')
+            .replace(/<ol(?![^>]*class)/g, '<ol class="recuo"');
+        // Remove a classe do primeiro <ul> (caso queira recuar só os internos)
+        content = content.replace('<ul class="recuo">', '<ul>');
+        return content;
+    },
+    borderRadius() {
+        return this.slide.borderRadius || '12px'
     }
+}
 }
 </script>
 
@@ -87,8 +93,8 @@ export default {
 
 .image-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -167,4 +173,5 @@ export default {
         min-height: 250px;
     }
 }
+
 </style>

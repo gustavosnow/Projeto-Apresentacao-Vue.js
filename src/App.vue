@@ -37,30 +37,70 @@ export default {
       },
       slides: [
         {
-          titulo: "Surgimento do Vue.js",
-          conteudo: "O Vue.js foi criado por Evan You em 2014.\n\nPrincipais características:\n- Progressivo\n- Acessível\n- Versátil",
-          imagem: "https://miro.medium.com/v2/resize:fit:500/0*xkJgg-6HskYrQ3N7.jpeg",
+          titulo: "História do Vue.js",
+          conteudo: "O Vue.js é um framework JavaScript progressivo usado para construir interfaces de usuário e aplicações web. Sua história é relativamente recente, mas cheia de marcos importantes.",
+          imagem: "src/assets/Imagem1.png",
           imageSide: "right",
+          imageCaption: "Vue.js",
+          alt: "Logo do Vue.js"
+        },
+        {
+          titulo: "Origem e Criação (2013–2014)",
+          conteudo: "•	Criador: Evan You, ex-desenvolvedor do Google, teve a ideia do Vue.js enquanto trabalhava com ferramentas como AngularJS no Google.\n\n• Motivação: Ele queria criar algo mais leve e flexível do que o AngularJS, mantendo a reatividade e a simplicidade na criação de interfaces.\n\n• Lançamento inicial: Em fevereiro de 2014, Evan lançou o Vue.js como um projeto pessoal de código aberto no GitHub.",
+          imagem: "src/assets/Imagem2.jpg",
+          imageSide: "left",
           imageCaption: "Evan You, criador do Vue.js",
           alt: "Evan You, criador do Vue.js"
         },
         {
-          titulo: "O que é Sustentabilidade?",
-          conteudo: "Sustentabilidade significa suprir as necessidades do presente...",
-          imagem: "https://source.unsplash.com/featured/?sustainability,green",
-          imageSide: "left"
+          titulo: "Crescimento e Adoção (2015–2016)",
+          conteudo: `<ul>      
+      <li>O <b>Vue</b> começou a ganhar notoriedade na comunidade de desenvolvedores por ser:</li>
+      <ul>
+        <li>Simples de aprender.</li>
+        <li>Leve e fácil de integrar em projetos existentes.</li>
+        <li>Reativo e com sintaxe amigável.</li>
+      </ul>
+    </li>
+    <li><b>Vue 1.0</b> foi lançado em <b>outubro de 2015</b>.</li>
+    <li>A comunidade começou a crescer, contribuindo com plugins, ferramentas e documentação.</li>
+  </ul>`,
         },
         {
-          titulo: "Como Podemos Ajudar?",
-          conteudo: "Separar o lixo, economizar água, usar menos plástico...",
-          imagem: "https://source.unsplash.com/featured/?recycle,ecology",
-          imageSide: "right"
+          titulo: "Vue 2.0 – Consolidação (2016)",
+          conteudo: "•	Lançado em setembro de 2016.\n\n•	Melhorias significativas em desempenho e arquitetura.\n\n•	Introdução do Virtual DOM, Render Functions, e Server-Side Rendering (SSR).\n\n•	Tornou-se uma alternativa real ao React e Angular.",
+        },
+         {
+          titulo: "Popularidade Mundial (2017–2019)",
+          conteudo: "•	Vue começou a ser adotado por grandes empresas como Alibaba, Xiaomi, Baidu e Laravel (como framework frontend padrão).\n\n•	A comunidade cresceu globalmente, com conferências, cursos e eventos em vários países.\n\n•	Recebeu apoio através do Patreon e de patrocinadores, permitindo que Evan e outros colaboradores se dedicassem em tempo integral.",
+        },
+         {
+          titulo: "Vue 3.0 – Evolução Moderna (2020)",
+          conteudo: "•	Lançado oficialmente em setembro de 2020.\n\n•	Reescrito com TypeScript, oferecendo melhor tipagem e manutenção.\n\n•	Introdução da Composition API, que oferece mais flexibilidade e organização para aplicações maiores.\n\n•	Melhorias de desempenho e tamanho de bundle.\n\n•	Ferramentas novas como o Vite, um bundler moderno também criado por Evan You, ganharam popularidade ao lado do Vue.",
         },
         {
-          titulo: "Conclusão",
-          conteudo: "Cada pequeno gesto conta...",
-          imagem: "https://source.unsplash.com/featured/?future,environment",
-          imageSide: "left"
+          titulo: "Vue.js Atualmente (2021–2025)",
+          conteudo: "•	Vue 3 se tornou a versão padrão em 2022.\n\n•	Amplamente utilizado em aplicações SPA, SSR, PWA e até mesmo mobile (com frameworks como Quasar e NativeScript-Vue).\n\n•	A comunidade continua forte e ativa.•	Ferramentas como Pinia (substituto do Vuex), Vue Router, e o Nuxt 3 impulsionam o ecossistema.\n\n•	Evan You continua liderando o desenvolvimento do framework.",
+        },
+        {
+          titulo: "Vantagens do Vue.js",
+          conteudo: "1. Fácil de aprender\n\n2. Documentação excelente\n\n3. Reatividade nativa\n\n4. Flexibilidade e integração\n\n5. Comunidade ativa e crescente\n\n6. Performance\n\n7. Composition API (Vue 3)\n\n8. Ferramentas modernas",
+        },
+        {
+          titulo: "Desvantagens do Vue.js",
+          conteudo: "1. Menor adoção corporativa no Ocidente\n\n2. Menor ecossistema comparado ao React\n\n3. Comunidade menor que a do React\n\n4. Escolhas demais podem confundir\n\n5. Atualizações nem sempre são retrocompatíveis\n\n",
+        },
+        {
+          titulo: "Áreas onde o Vue.js é bem utilizado",
+          conteudo: "1. Sistemas de Gestão (ERP, CRM, Painéis Admin).\n\n2. Single Page Applications (SPAs)\n\n3. Prototipagem Rápida de Interfaces",
+        },
+        {
+          titulo: "Empresas que usam Vue.js",
+          conteudo: "1. Xiaomi\n\n2. Nintendo\n\n3. BMW\n\n4. Adobe",
+          imagem: "src/assets/Imagem3.jpg",
+          imageSide: "right",
+          imageCaption: "Empresas que usam Vue.js",
+          alt: "Logos de empresas que usam Vue.js: Xiaomi, Nintendo, BMW, Adobe"
         }
       ]
     };
