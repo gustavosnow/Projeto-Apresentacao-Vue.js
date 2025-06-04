@@ -11,7 +11,7 @@
             <!-- Bloco de Imagem em Destaque -->
             <div v-if="slide.imagem" class="image-block">
                 <div class="image-container">
-                    <img :src="slide.imagem" :alt="slide.alt || 'Imagem ilustrativa'" class="full-cover-image"
+                    <img :src="getImagePath(slide.imagem)" :alt="slide.alt || 'Imagem ilustrativa'" class="full-cover-image"
                         :style="{ 'border-radius': borderRadius }">
                     <div class="image-overlay"></div>
                     <p v-if="slide.imageCaption" class="image-caption">{{ slide.imageCaption }}</p>
@@ -22,7 +22,13 @@
 </template>
 
 <script>
+import { getImageUrl } from './ImageLoader.js';
 export default {
+    methods: {
+        getImagePath(path) {
+            return getImageUrl(path);
+        }
+    },
     props: {
         slide: {
             type: Object,
