@@ -4,7 +4,7 @@
 
         <div class="content-wrapper" :class="{ 'image-left': slide.imageSide === 'left' }">
             <!-- Bloco de Texto -->
-            <div class="text-block">
+            <div class="text-block" v-if="slide.conteudo">
                 <div class="justified-text" v-html="formattedContent"></div>
             </div>
 

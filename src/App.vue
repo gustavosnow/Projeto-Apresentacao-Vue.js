@@ -91,6 +91,11 @@ export default {
           imageSide: "right",
           imageCaption: "Empresas que usam Vue.js",
           alt: "Imagem com logos de empresas que usam Vue.js: Xiaomi, Nintendo, BMW, Adobe"
+        },
+        {
+          titulo: "Fluxograma do Projeto",
+          imagem: "src/assets/fluxograma.png",
+          alt: "Fluxograma sobre o Projeto feito em Vue.js, que mostra as relações entre os componentes com o arquivo principal."
         }
       ]
     };

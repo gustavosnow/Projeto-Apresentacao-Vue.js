@@ -43,7 +43,8 @@ export default {
                 { titulo: "Vantagens do Vue.js", link: 8 },
                 { titulo: "Desvantagens do Vue.js", link: 9 },
                 { titulo: "Áreas onde o Vue.js é bem utilizado", link: 10 },
-                { titulo: "Empresas que usam Vue.js", link: 11 }
+                { titulo: "Empresas que usam Vue.js", link: 11 },
+                { titulo: "Fluxograma do Projeto", link: 12 }
             ]
         };
     },
