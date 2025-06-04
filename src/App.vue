@@ -94,7 +94,7 @@ export default {
         },
         {
           titulo: "Fluxograma do Projeto",
-          imagem: "src/assets/fluxograma.png",
+          imagem: "src/assets/fluxograma_vue_simples.png",
           alt: "Fluxograma sobre o Projeto feito em Vue.js, que mostra as relações entre os componentes com o arquivo principal."
         }
       ]
