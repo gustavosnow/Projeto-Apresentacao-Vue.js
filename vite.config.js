@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: '/projetoPW/', // Set to your repository name
+  base: '/Projeto-Apresentacao-Vue.js/', // Set to your repository name
   plugins: [vue()],
   server: {
     port: 5173,

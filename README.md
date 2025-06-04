@@ -1,8 +1,8 @@
-# ProjetoPW
+# Projeto-Apresentacao-Vue.js
 
 ## Descrição
 
-O **ProjetoPW** é uma aplicação web desenvolvida com Vue.js, que contém como conteúdo uma apresentação sobre o próprio Vue. Este projeto foi criado como parte de estudos/prática na disciplina de Programação Web do curso de Engenharia de Software 2024, da UEPA Campus XXIII - Parauapebas, utilizando tecnologias front-end.
+O **Projeto-Apresentacao-Vue.js** é uma aplicação web desenvolvida com Vue.js, que contém como conteúdo uma apresentação sobre o próprio Vue. Este projeto foi criado como parte de estudos/prática na disciplina de Programação Web do curso de Engenharia de Software 2024, da UEPA Campus XXIII - Parauapebas, utilizando tecnologias front-end.
 
 ## Tecnologias Utilizadas
 
@@ -15,12 +15,12 @@ O **ProjetoPW** é uma aplicação web desenvolvida com Vue.js, que contém como
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/gustavosnow/projetoPW.git
+   git clone https://github.com/gustavosnow/Projeto-Apresentacao-Vue.js.git
    ```
 
 2. **Acesse a pasta do projeto:**
    ```bash
-   cd projetoPW
+   cd Projeto-Apresentacao-Vue.js
    ```
 
 3. **Instale as dependências:**
@@ -49,7 +49,7 @@ A aplicação estará disponível em [http://localhost:5173](http://localhost:51
 ## Estrutura do Projeto
 
 ```
-projetoPW/
+Projeto-Apresentacao-Vue.js/
 ├── src/
 │   ├── assets/
 │   ├── components/
@@ -76,4 +76,4 @@ Para contribuir com este projeto:
 
 ---
 
-> Documentação gerada por GitHub Copilot para gustavosnow/projetoPW.
+> Documentação gerada por GitHub Copilot para gustavosnow/Projeto-Apresentacao-Vue.js.
